@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nightcap Privacy Policy</title>
+<style>
+  :root {
+    --ink: #0e100e; --fg: #ece7dd; --dim: #a9a399; --faint: #76736c;
+    --amber: #d9a95c; --line: #2a2d29; --surface: #151815;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --ink: #fbf9f5; --fg: #1d1f1c; --dim: #4a4d47; --faint: #6e716a;
+      --amber: #8a5d14; --line: #e2ddd3; --surface: #f4f1ea;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--ink); color: var(--fg);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .25rem; font-weight: 600; }
+  h2 {
+    font-size: 1.15rem; margin: 2.5rem 0 .6rem; color: var(--amber);
+    font-weight: 600; letter-spacing: .01em;
+  }
+  .updated { color: var(--faint); font-size: .9rem; margin: 0 0 2rem; }
+  p { margin: 0 0 1rem; color: var(--dim); }
+  strong { color: var(--fg); font-weight: 600; }
+  ul { margin: 0 0 1rem; padding-left: 1.2rem; color: var(--dim); }
+  li { margin-bottom: .5rem; }
+  .callout {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: 12px; padding: 1rem 1.15rem; margin: 0 0 1rem;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+    color: var(--faint); font-size: .9rem;
+  }
+  a { color: var(--amber); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Nightcap Privacy Policy</h1>
+  <p class="updated">Last updated 10 October 2026</p>
+
+  <p>Nightcap is an evening check-in for two people. One half of it &mdash; what you
+  want tonight &mdash; is the most private thing the app holds, and the app is built
+  so that it stays that way. This policy says plainly what is collected, what
+  leaves your phone, and what your partner can and cannot see.</p>
+
+  <h2>The short version</h2>
+  <ul>
+    <li>Your nightly picks are <strong>never readable by your partner</strong>, and never
+      readable by us. Only an overlap is ever revealed, and only when you have
+      both sealed.</li>
+    <li>Gratitude you write is private unless you tick the box to share it.</li>
+    <li>Your calendar and photos are read <strong>on your phone only</strong>. Neither the
+      photos, nor their contents, nor your calendar entries are ever uploaded.</li>
+    <li>There is no analytics, no advertising, no tracking, and nothing is sold or
+      shared with anyone.</li>
+  </ul>
+
+  <h2>What the app stores</h2>
+  <p><strong>Your account.</strong> When you sign in with Apple, we store the user identifier
+  Apple gives us and the name you choose to show your partner. If you use Apple's
+  Hide My Email, we never see your real address.</p>
+
+  <p><strong>Your gratitude notes.</strong> Stored in your own archive. A note is sent to your
+  partner only if you asked for it to be, and only once you have both sealed the
+  evening. A note you have sent stays with them if you later unpair or delete
+  your account &mdash; it is their copy of something you gave them.</p>
+
+  <p><strong>Tonight's picks.</strong> Stored in a document only you can read. The security
+  rules give your partner no read path to it at all. When you have both sealed,
+  the server computes only the overlap between your two sets and writes that
+  single result where you can both see it. Neither of you can see what the other
+  chose outside the overlap, and the picks are deleted when the evening closes.</p>
+
+  <p><strong>Your shared settings.</strong> The time you and your partner agree to check in
+  by, and the list of vibes you choose between.</p>
+
+  <h2>What the app reads from your phone</h2>
+  <p>Nightcap asks for a small number of permissions to suggest things you might be
+  grateful for. All of the processing below happens <strong>on your device</strong>.</p>
+
+  <p><strong>Calendar.</strong> Today's entries are read to find things worth being glad about.
+  Entries are never uploaded or stored by us.</p>
+
+  <p><strong>Photos.</strong> Today's photos are examined on your device, using Apple's Vision
+  framework, to work out roughly what they show (&ldquo;outdoor&rdquo;, &ldquo;park&rdquo;, &ldquo;food&rdquo;). The
+  photos themselves never leave your phone and are never uploaded.</p>
+
+  <div class="callout">
+    <p><strong>Location attached to your photos.</strong> This is the one thing people are most
+    often surprised by, so it is stated plainly: a photo carries the coordinates
+    of where it was taken, and permission to read your photos is enough to read
+    those coordinates. Nightcap does not ask for location permission and does not
+    track you, but it does read the location attached to today's photos.</p>
+    <p>Those coordinates are sent to <strong>Apple's geocoding service</strong> to turn them into
+    the name of a place, so a suggestion can say &ldquo;Saint Edward State Park&rdquo; instead
+    of nothing. <strong>This is the only thing in the whole app that leaves your device
+    for this purpose.</strong> The coordinates are used once, for that lookup, and then
+    discarded. They are not stored by us and never reach your partner.</p>
+    <p>Nightcap only uses the name of a genuine public place &mdash; a park, a shop, a
+    landmark. If there is no such place, which is what happens at a home, no place
+    is used at all. Your home address is deliberately never used as a suggestion.</p>
+  </div>
+
+  <p><strong>A reference photo of your partner, if you choose to add one.</strong> Used to prefer
+  photos they appear in. Only a numeric fingerprint is kept, on your phone, in
+  this app. The photos themselves are not stored, and the fingerprint is never
+  uploaded.</p>
+
+  <p><strong>Notifications.</strong> At most two an evening: a reminder two hours before your
+  agreed time if you have not checked in, and a word once the evening is decided.
+  Neither says what either of you chose.</p>
+
+  <h2>Writing the suggestions</h2>
+  <p>The suggested lines are written by Apple's on-device model, which runs entirely
+  on your iPhone. Nothing about your day is sent to us or to any other company to
+  produce them. The intimacy side of the app is never sent to any model at all.</p>
+
+  <h2>Who else is involved</h2>
+  <p>Nightcap uses <strong>Google Firebase</strong> for accounts, storage and notifications, and
+  <strong>Apple</strong> for sign-in, notification delivery, and turning coordinates into a
+  place name. They process this data on our behalf. Nothing is sold, and there is
+  no advertising or analytics in the app.</p>
+
+  <h2>Deleting your account</h2>
+  <p>You can delete your account at any time from Settings, inside the app. This
+  deletes your account, your whole gratitude archive, and any picks, and ends
+  your pairing. It cannot be undone. Gratitude you had already sent to a partner
+  stays with them.</p>
+  <p>Either partner can unpair at any time, immediately, without the other's
+  agreement.</p>
+
+  <h2>Children</h2>
+  <p>Nightcap is for adults and is not directed at children.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes in a way that affects what is collected or who can see
+  it, the app will say so before the change takes effect.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy: <a href="mailto:twillscott@hotmail.com">twillscott@hotmail.com</a></p>
+
+  <footer>Nightcap &mdash; one quick check-in each evening, for you and your partner.</footer>
+</main>
+</body>
+</html>
